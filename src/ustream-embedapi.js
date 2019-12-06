@@ -56,13 +56,13 @@ var UstreamEmbed = (function () {
 						return;
 					}
 
-					if (!isReady) {
-						if (!cmdQueue) {
-							cmdQueue = [];
-						}
-						cmdQueue.push(arguments);
-						return;
-					}
+// 					if (!isReady) {
+// 						if (!cmdQueue) {
+// 							cmdQueue = [];
+// 						}
+// 						cmdQueue.push(arguments);
+// 						return;
+// 					}
 
 					var args = (makeArray(arguments)).slice(1);
 
