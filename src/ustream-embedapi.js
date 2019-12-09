@@ -311,7 +311,7 @@ var UstreamEmbed = (function () {
 	}
 
 	function sendMessage (element, host, data) {
-		element.contentWindow.postMessage(JSON.stringify(data), host);
+		if(element && element.contentWindow) element.contentWindow.postMessage(JSON.stringify(data), host);
 	}
 
 	function getHostName (url) {
